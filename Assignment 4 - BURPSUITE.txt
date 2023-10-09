@@ -1,0 +1,64 @@
+----------------------BURPSUITE-------------------------
+
+Burp Suite is a popular cybersecurity testing tool used for web application security assessment and penetration testing. Developed by PortSwigger Web Security, Burp Suite is widely used 
+by security professionals, ethical hackers, and developers to identify and address security vulnerabilities in web applications.
+
+FEATURES =
+
+Proxy: 
+Burp Suite acts as an intercepting proxy server, allowing users to capture and modify HTTP requests and responses between a web browser and the target web application. This feature is 
+useful for analyzing and manipulating web traffic.
+
+Scanner: 
+The Scanner module automates the detection of common security vulnerabilities in web applications, including cross-site scripting (XSS), SQL injection, and more. It provides detailed reports 
+of identified vulnerabilities.
+
+Spider: 
+Burp's Spider tool crawls a web application to discover and map its content and structure. This helps testers identify hidden or unlinked pages and resources.
+
+Repeater: 
+Repeater enables manual testing by allowing users to send individual requests to the web application and observe the responses. It's useful for fine-tuning attacks or exploring potential vulnerabilities.
+
+Intruder: 
+The Intruder module is designed for automating brute-force and dictionary-based attacks against web application parameters. Testers can customize attack payloads and analyze responses.
+
+Sequencer: 
+Sequencer analyzes the quality of randomness in web application tokens and session identifiers, helping to identify weak session management vulnerabilities.
+
+Decoder: 
+Decoder assists in encoding and decoding data in various formats, such as base64, URL encoding, and more. This is useful for analyzing and manipulating data within requests and responses.
+
+Comparer: 
+The Comparer tool allows testers to compare two HTTP responses to identify differences, which can be helpful in identifying potential vulnerabilities or inconsistencies.
+
+Extensibility: 
+Burp Suite supports the use of extensions and plugins. Users can develop their custom extensions to add new functionality or automate specific tasks.
+
+Session Handling: 
+Burp Suite can manage session cookies and authentication tokens, making it easier to test authenticated areas of a web application.
+
+Reporting: 
+It provides detailed and customizable reports of identified vulnerabilities, making it easier to communicate findings to development teams or clients.
+
+Collaboration: 
+Burp Suite offers features for team collaboration, allowing multiple testers to work on a project simultaneously and share findings.
+
+Target Scope: 
+Users can define the scope of their testing by specifying which parts of a web application should be tested, helping to avoid accidental testing of external websites.
+
+Integration: 
+It can be integrated with other security tools and frameworks, such as Metasploit, to enhance the scope and depth of security assessments.
+
+
+-------------Burp Intruder attack types---------------
+
+Sniper - 
+This attack places each payload into each payload position in turn. It uses a single payload set. The total number of requests generated in the attack is the product of the number of positions 
+and the number of payloads in the payload set. The Sniper attack is useful for fuzzing a number of request parameters individually for common vulnerabilities.
+
+Cluster bomb - 
+This attack iterates through a different payload set for each defined position. Payloads are placed from each set in turn, so that all payload combinations are tested. The total number of requests 
+generated in the attack is the product of the number of payloads in all defined payload sets - this may be extremely large. The Cluster bomb attack is useful where an attack requires unrelated or 
+unknown input to be inserted in multiple places within the request. For example, when guessing both a username and password.
+
+
